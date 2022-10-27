@@ -15,6 +15,7 @@ const Login = () => {
     const googleProvider = new GoogleAuthProvider()
 
     const handleGoogleSignIn = () => {
+        console.log('buttonclicked')
         providerLogin(googleProvider)
             .then(result => {
                 const user = result.user;
@@ -68,36 +69,38 @@ const Login = () => {
 
 
     return (
-        <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control name="email" type="email" placeholder="Enter email" required />
+        <div>
+            <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>Email address</Form.Label>
+                    <Form.Control name="email" type="email" placeholder="Enter email" required />
 
-            </Form.Group>
+                </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control name="password" type="password" placeholder="Password" required />
-            </Form.Group>
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                    <Form.Label>Password</Form.Label>
+                    <Form.Control name="password" type="password" placeholder="Password" required />
+                </Form.Group>
 
-            <Button variant="primary" type="submit">
-                Login
-            </Button>
-            <Form.Text className="text-danger">
-                {error}
-            </Form.Text>
+                <Button className='mb-4' variant="primary" type="submit">
+                    Login
+                </Button>
+                <Form.Text className="text-danger">
+                    {error}
+                </Form.Text>
 
-            <div>
-                <div className="d-grid gap-2">
-                    <Button onClick={handleGoogleSignIn} variant="primary" size="lg">
-                        Login with Google
-                    </Button>
-                    <Button onClick={handleGithubSignIn} variant="secondary" size="lg">
-                        Login with Github
-                    </Button>
+                <div>
+                    <div className="d-grid gap-2 pb-4">
+                        <Button onClick={handleGoogleSignIn} variant="primary" size="lg">
+                            Login with Google
+                        </Button>
+                        <Button onClick={handleGithubSignIn} variant="secondary" size="lg">
+                            Login with Github
+                        </Button>
+                    </div>
                 </div>
-            </div>
-        </Form>
+            </Form>
+        </div>
         
     );
     
