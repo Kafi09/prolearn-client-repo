@@ -52,7 +52,7 @@ const Header = () => {
 
 
                         </Nav.Link>
-                        <Nav.Link eventKey={2}>
+                        <Link style={{ color: 'white' }} to={"/profile"} eventKey={2}>
                             {user?.photoURL ?
                                 <Image
                                     style={{ height: '30px' }}
@@ -61,7 +61,7 @@ const Header = () => {
                                 </Image>
                                 : <FaUserCircle></FaUserCircle>
                             }
-                        </Nav.Link>
+                        </Link>
                     </Nav>
                     
                 </Navbar.Collapse>

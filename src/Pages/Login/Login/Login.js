@@ -2,13 +2,13 @@ import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
+
 const Login = () => {
-
-
-    
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/';  
 // google login part
     const { providerLogin } = useContext(AuthContext);
 
@@ -42,7 +42,7 @@ const Login = () => {
                 console.log(user);
                 setError('');
                 form.reset();
-                navigate('/')
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 console.error(error)
