@@ -16,8 +16,8 @@ const Blog = () => {
                     - Keycloak etc.
                 </p>
 
-                <h1 class="fs-4">Q3:</h1>
-                <p class="fs-5">Ans:</p>
+                <h1 class="fs-4">Q3:How does the private route work?</h1>
+                <p class="fs-5">Ans: The private route component is similar to the public route, the only change is that redirect URL and authenticate condition. If the user is not authenticated he will be redirected to the login page and the user can only access the authenticated routes If he is authenticated (Logged in).</p>
 
                 <h1 class="fs-4">Q4:</h1>
                 <p class="fs-5">Ans:</p>
