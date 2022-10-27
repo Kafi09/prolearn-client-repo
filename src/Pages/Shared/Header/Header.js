@@ -28,7 +28,7 @@ const Header = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="/courses/:id"><Link style={{ color: 'white' }} to='/'>Courses</Link></Nav.Link>
                         <Nav.Link href="/blog">Blog</Nav.Link>
-                        <Nav.Link href="#blog">FAQ</Nav.Link>
+                        <Nav.Link href="/faq">FAQ</Nav.Link>
                        
                     </Nav>
 
