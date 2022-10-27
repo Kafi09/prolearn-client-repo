@@ -19,8 +19,10 @@ const Blog = () => {
                 <h1 class="fs-4">Q3:How does the private route work?</h1>
                 <p class="fs-5">Ans: The private route component is similar to the public route, the only change is that redirect URL and authenticate condition. If the user is not authenticated he will be redirected to the login page and the user can only access the authenticated routes If he is authenticated (Logged in).</p>
 
-                <h1 class="fs-4">Q4:</h1>
-                <p class="fs-5">Ans:</p>
+                <h1 class="fs-4">Q4:What is Node? How does Node work?</h1>
+                <p class="fs-5">Ans: It is a used as backend service where javascript works on the server-side of the application. This way javascript is used on both frontend and backend.
+                    Node allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser. Node can, therefore, be used to write server-side applications with access to the operating system, file system, and everything else required to build fully-functional applications.
+                </p>
                 
 
             </section>
