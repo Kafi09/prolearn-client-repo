@@ -5,27 +5,23 @@ const Faq = () => {
     return (
         <Accordion>
             <Accordion.Item eventKey="0">
-                <Accordion.Header>Accordion Item #1</Accordion.Header>
+                <Accordion.Header>What are the 7 steps of programming?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    1.Defining the problem.
+                    2.Planning the solution.
+                    3.Coding the program.
+                    4.Testing the program.
+                    5.Documenting the program.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
-                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                <Accordion.Header>What are the 5 basic concepts of programming language?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                   1. Variables. As the foundation of any computer programming language, variables act as “containers” that “hold” information.
+                   2. Data Structures. Data structures allow programmers to streamline data collection when a large amount of related information is involved.
+                   3. Control Structures
+                   4. Syntax.
+                   5. Tools.
                 </Accordion.Body>
             </Accordion.Item>
         </Accordion>
